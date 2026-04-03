@@ -88,6 +88,8 @@ func parseConfig(json gjson.Result, config *PluginConfig) error {
 	defaultSuffixes := map[string]bool{
 		"/chat/completions": true,
 		"/completions":      true,
+		"/responses":        true,
+		"/messages":         true,
 	}
 	for _, suffix := range suffixes {
 		path := suffix.String()
