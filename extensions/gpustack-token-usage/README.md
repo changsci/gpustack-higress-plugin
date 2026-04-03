@@ -21,6 +21,8 @@ realIPToHeader: "X-GPUStack-Real-IP" # Optional, specify which header to inject 
 enableOnPathSuffix: # Optional, list of URI path suffixes to process
   - "/chat/completions"
   - "/completions"
+  - "/responses"
+  - "/messages"
   - "/embeddings"
   - "/audio/transcriptions"
   - "/audio/speech"
